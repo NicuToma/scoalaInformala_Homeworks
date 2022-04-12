@@ -1,0 +1,42 @@
+.chose_products_type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(3, 1fr);
+  column-gap: 1%;
+  row-gap: 5%; */
+  gap: 1%;
+  width: auto;
+  justify-content: space-around;
+  height: 200px;
+  padding: 0.5%;
+  align-items: center;
+}
+
+.food-card {
+  /* border: 5px solid;
+  border-image: linear-gradient(45deg, wheat, orangered) 20; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  max-width: 25%;
+  height: 200px;
+  padding: 1%;
+  margin: 2%;
+}
+
+/* .food-card table tbody tr {
+  text-align: center;
+} */
+.chose_products_type img {
+  width: 50%;
+  max-height: auto;
+  border-radius: 20%;
+}
+
+.details a {
+  text-decoration: none;
+  color: black;
+}

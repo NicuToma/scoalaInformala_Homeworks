@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 700px) {
-  .container_food {
-    font-size: 0.9em;
+@media screen and (max-width: 767px) {
+  h6,
+  .menu_links,
+  span {
+    font-size: 0.7em;
   }
+
+  .details {
+    font-size: 0.5em;
+  }
+
   .carousel {
     position: absolute;
     top: 40%;
@@ -18,11 +25,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 80%;
-  background: orangered;
-  background-image: -webkit-linear-gradient(85deg, white 70%, orangered 0%);
-  min-height: 500px;
   font-family: "Roboto Condensed", sans-serif;
+  padding: 1%;
 }
 
 .nav_menu {
@@ -30,6 +34,7 @@
   flex-direction: row;
   width: 100%;
   height: 20%;
+  background: orangered;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
@@ -39,7 +44,6 @@
 .site_name {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 40%;
   height: auto;
   align-items: center;
@@ -53,7 +57,7 @@
 
 .site_name a {
   text-decoration: none;
-  color: white;
+  color: rgb(92, 87, 87);
 }
 
 .menu_links {
@@ -65,7 +69,7 @@
 }
 
 .menu_links a {
-  color: white;
+  color: rgb(92, 87, 87);
   text-decoration: none;
   font-size: 1em;
 }
@@ -87,6 +91,11 @@
   flex-wrap: wrap;
   width: 60%;
   align-items: center;
+}
+
+#demo {
+  width: 100%;
+  height: 80%;
 }
 
 .footer {
