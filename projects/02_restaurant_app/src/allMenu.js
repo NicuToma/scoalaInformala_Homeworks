@@ -2,7 +2,7 @@ window.addEventListener("load", populate);
 let foodType = document.querySelector(".chose_products_type");
 async function populate() {
   let result = await fetch(
-    "https://6256f0c76ea703700542743f.mockapi.io/ciorbeSupe"
+    "https://6256f0c76ea703700542743f.mockapi.io/foodMenu"
   );
   let food = await result.json();
   let foodCardsString = food

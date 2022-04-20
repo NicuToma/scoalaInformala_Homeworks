@@ -1,0 +1,71 @@
+.produse-cos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.lista_plata {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  gap: 10px;
+}
+.cart-item-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  gap: 3%;
+}
+
+.imgName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+  max-width: 50%;
+}
+
+.imgName a {
+  max-width: 20%;
+  height: 20%;
+}
+
+.imgName img {
+  max-width: 100%;
+  height: auto;
+}
+
+.quantity {
+  width: 25%;
+}
+
+.plateste {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+}
+
+.decreaseNoOfProducts,
+.increaseNoOfProducts {
+  border: none;
+  background: none;
+}
+
+.priceValue {
+  justify-content: center;
+  width: 25%;
+}
+
+.deleteItem,
+.pay {
+  border: none;
+  font-size: 0.7em;
+}
+
+.plateste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

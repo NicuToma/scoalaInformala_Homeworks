@@ -1,12 +1,11 @@
 window.addEventListener("load", populate);
-let soup = document.querySelector(".chose_products_type");
+let foodType = document.querySelector(".chose_products_type");
 async function populate() {
-  let result = await fetch("./restaurant_json/bauturi.json");
+  let result = await fetch(
+    "https://6256f0c76ea703700542743f.mockapi.io/desertBauturi"
+  );
   let food = await result.json();
-  console.log(food);
-  console.log(food.name);
-
-  let productCardsString = food
+  let foodCardsString = food
     .map(
       (food) =>
         `<div class="food-card">
@@ -19,5 +18,5 @@ async function populate() {
        `
     )
     .join("");
-  soup.innerHTML = productCardsString;
+  foodType.innerHTML = foodCardsString;
 }

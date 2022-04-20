@@ -6,18 +6,27 @@
 
 @media screen and (max-width: 767px) {
   h6,
+  h3,
+  p,
   .menu_links,
   span {
     font-size: 0.7em;
   }
 
-  .details {
+  .details,
+  .add-to-cart {
     font-size: 0.5em;
   }
 
   .carousel {
     position: absolute;
     top: 40%;
+  }
+  .chose_products_type {
+    flex-wrap: wrap;
+  }
+  .cardFood {
+    flex-wrap: wrap;
   }
 }
 
@@ -91,6 +100,15 @@
   flex-wrap: wrap;
   width: 60%;
   align-items: center;
+}
+
+.noOfItemsInCart {
+  font-size: 1.1em;
+  color: rgb(19, 19, 19);
+}
+
+.icon {
+  gap: 10%;
 }
 
 #demo {
