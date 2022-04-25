@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+.card > .button {
+  width: 140px;
+  height: 35px;
+  font-weight: bold;
+  outline: 4px solid darkgray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card > .button:active {
+  background-color: aquamarine;
+}
