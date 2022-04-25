@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 1em;
+  }
+  .header h5 {
+    font-size: 0.7em;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap");
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2vh;
+  height: fit-content;
+  width: 100%;
+  font-family: "Almarai", sans-serif;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  color: rgba(0, 0, 0, 0.775);
+
+  background-color: rgba(230, 225, 225, 0.631);
+}
+
+.header h5 {
+  color: rgba(0, 0, 0, 0.275);
+  padding-top: 2%;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  height: fit-content;
+  background-color: rgba(233, 228, 228, 0.398);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.775);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.contact > input {
+  height: 25px;
+  border-color: rgba(233, 228, 228, 0.707);
+  border-radius: 3px;
+  border-style: hidden;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 260px;
+}
+.message > textarea {
+  height: 130px;
+  font-family: "Almarai", sans-serif;
+  border-color: rgba(233, 228, 228, 0.707);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.button {
+  display: flex;
+  justify-self: center;
+}
+.button > input[type="button"] {
+  height: 30px;
+  max-width: 110px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: rgba(67, 137, 208, 0.912);
+  border-style: hidden;
+  color: white;
+  cursor: pointer;
+}
+.button > input[type="button"]:hover {
+  background-color: rgb(96, 96, 96);
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+}
+.social > p {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.583);
+}
+.link {
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+}
+
+.link li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 9pt;
+  font-weight: bold;
+  color: rgba(2, 155, 226, 0.761);
+}
+.line {
+  width: 270px;
+  border-bottom: 2px solid lightgray;
+}
