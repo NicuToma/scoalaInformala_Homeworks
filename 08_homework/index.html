@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment-Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="commentPost">
+        <h2>Comment</h2>
+        <label for="name">Name</label>
+        <div class="form">
+          <input type="text" id="name" placeholder="Your name here" />
+          <label for="comment">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="20"
+            rows="5"
+            placeholder="Your comment here"
+          ></textarea>
+        </div>
+
+        <button id="post" value="post">Add</button>
+      </div>
+
+      <div class="user_comments">
+        <ul class="commentList"></ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
