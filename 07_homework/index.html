@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manipulation Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="message">
+        <img src="checked.png" alt="check" id="check" />
+        <p id="msg"></p>
+        <button id="closeBtn">
+          <img src="x.png" alt="close" id="close" />
+        </button>
+      </div>
+      <div id="formContainer">
+        <form id="form" name="form1">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            onblur="fnField()"
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            onblur="lnField()"
+          />
+          <h4>Gender</h4>
+          <div id="gender">
+            <div class="male">
+              <input type="radio" name="gender" id="male" />
+              <label for="male">M</label>
+            </div>
+            <div class="female">
+              <input type="radio" name="gender" id="fmale" />
+              <label for="fmale">F</label>
+            </div>
+          </div>
+          <textarea
+            name="textMessage"
+            id="textMessage"
+            cols="30"
+            rows="10"
+            placeholder="Your message here..."
+            onblur="messageField()"
+          ></textarea>
+          <button type="button" id="send">Submit</button>
+          <div id="errorMessages">
+            <p id="fnErrorMessage"></p>
+            <p id="lnErrorMessage"></p>
+            <p id="tmErrorMessage"></p>
+          </div>
+        </form>
+        <div id="foto"><img src="Leatt-2130.png" alt="logo" id=photo" /></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

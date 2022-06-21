@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  #form input,
+  #form button,
+  #form textarea,
+  #gender {
+    font-size: 0.5em;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  height: auto;
+  justify-self: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2%;
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid black;
+  box-shadow: 5px 10px #888888;
+  border-radius: 2%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 80vh;
+  padding: 2%;
+  gap: 10px;
+}
+
+#message {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: auto;
+  background-color: rgba(211, 211, 211, 0.719);
+  align-items: center;
+  padding: 1px;
+  gap: 10px;
+}
+
+#msg {
+  width: 90vw;
+  color: rgb(35, 136, 35);
+}
+
+#check {
+  max-width: 3%;
+  height: auto;
+}
+
+#closeBtn {
+  max-width: 10%;
+  height: auto;
+  justify-content: center;
+}
+
+#close {
+  max-width: 15px;
+  height: auto;
+}
+
+#firstName,
+#lastName,
+#textMessage {
+  width: 90%;
+}
+
+.male {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.female {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+#gender {
+  display: flex;
+  flex-direction: column;
+}
+
+#send {
+  width: 50%;
+  height: fit-content;
+  border-radius: 5px;
+}
+#send:hover {
+  background-color: rgba(35, 140, 245, 0.767);
+  cursor: pointer;
+}
+
+#errorMessage {
+  color: red;
+  font-size: 1em;
+}
+
+#foto {
+  display: flex;
+  width: 40%;
+  height: 80vh;
+}
+
+#foto img {
+  align-self: flex-start;
+  max-width: 100%;
+  height: auto;
+}
+
+.borderRed {
+  border: 1px solid red;
+}
